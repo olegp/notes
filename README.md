@@ -11,4 +11,4 @@ Then, simply:
     npm install
     common-node .
 
-From the browser, navigate to http://localhost:8080/ to see the webapp in action.
+From the browser, navigate to [http://localhost:8080/](http://localhost:8080/) to see the webapp in action.
