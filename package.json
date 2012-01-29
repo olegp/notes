@@ -1,0 +1,15 @@
+{
+  "name": "notes",
+  "keywords": ["common-node"],
+  "description": "Common Node example using Stick and Mongo Sync",
+  "version": "0.1.0",
+  "author": "Oleg Podsechin <oleg@ionsquare.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/olegp/notes.git"
+  },
+  "main": "./index.js",
+  "engines": { "node": ">= 0.6.0" },
+  "dependencies" : { "mongo-sync": ">= 0.1.0", "stick": ">= 0.1.0" },
+  "licenses": [ { "type": "MIT" } ]
+}

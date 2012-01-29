@@ -1,0 +1,12 @@
+<div id="header">
+	<h1>{{title}}</h1>
+</div>
+<div id="body">
+	<form method="post" action=".">
+		<input type="text" name="name" /> <input type="submit" value="Post" />
+	</form>
+	<ul>
+		{{#notes}}
+		<li>{{name}}</li> {{/notes}}
+	</ul>
+</div>
