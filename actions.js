@@ -9,7 +9,7 @@ app.render.master = "page.html";
 function get(request) {
 	var context = {
 		title : "Notes",
-		notes : mongo.db("test").getCollection("posts").find().toArray()
+		notes : mongo.db("notes").getCollection("notes").find().toArray()
 	};
 	return app.render("index.html", context);
 }
@@ -17,6 +17,8 @@ function get(request) {
 app.get("/", get);
 
 app.post("/", function(request) {
-	mongo.db("test").getCollection("posts").save({name: request.params.name});
+	mongo.db("notes").getCollection("notes").save({
+		name : request.params.name
+	});
 	return get();
 });
